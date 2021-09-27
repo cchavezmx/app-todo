@@ -1,0 +1,30 @@
+@import '_fonts.scss';
+@import 'variables.scss';
+@import 'App.scss';
+@import 'Modals.scss';
+@import 'buttons.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,  'Segoe UI', 'Roboto', Popins,
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: fit-content;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.modal__error{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+

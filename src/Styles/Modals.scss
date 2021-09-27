@@ -1,0 +1,190 @@
+.newTaskForm{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    input{
+      margin: 10px;
+      width: 100%;
+      height: 3.125rem;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      outline: none;
+      border: 1px solid transparent;
+      padding: 0 10px;  
+    }
+
+    span{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+
+    .hiddeLabel{
+      display: none;
+    }
+
+    select{
+      margin: 10px;
+      width: 100%;
+      height: 3.125rem;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      outline: none;
+      border: 1px solid transparent;
+      padding: 0 10px;  
+    }
+
+    textarea{
+      margin: 10px;
+      width: 100%;
+      height: 6.125rem;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      outline: none;
+      border: 1px solid transparent;
+      padding: 0 10px;
+      
+    }
+
+    button{
+      margin-top: 10px;
+      height: 3rem;
+      width: 8rem;
+      border-radius: 4px;
+      background-color: var(--blue);
+      outline: none;
+      border: none;
+      color: white;
+
+      &:hover{
+        opacity: 0.6;
+        cursor: pointer;
+      }
+
+      &:active{
+        transform: scale(0.9);
+      }
+    }
+    
+    span{
+      margin: 10px;
+      color: #A2A2A2;
+    }
+  
+    a{
+      cursor: pointer;
+      &:active{
+        transform: scale(0.9);
+      }
+    }
+}
+
+.datePicker{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-around;
+  font-size: large;
+  font-family: Poppins;
+  
+  p{
+    margin: 0;
+  }
+
+  input{
+    width: fit-content;
+  }
+  
+}
+
+.input__modal{
+    margin-top: 40px;
+    margin: 10px;
+    width: 100%;
+    height: 3.125rem;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 10px;
+}
+
+
+.textarea__modal{
+    margin: 10px;
+    width: 100%;
+    height: 6.125rem;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 10px;
+}
+
+.modal__validate{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 ;
+  }
+
+}
+
+.modal__detalles{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+
+  label{
+    color: var(--fontgray)
+  }
+}
+
+.detalle__minipanel{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: larger;
+  }
+}
+
+.img__minipanel{
+  height: 40px; 
+  width: 40px; 
+  border-radius: 4px;
+  padding: 5px;
+  background-color: var(--moradito)
+}
+
+.detalle__responsables{
+  display: flex;
+  flex-direction: column;
+
+  span{
+    font-weight: bold;
+  }
+}
+
+
+@media (max-width: 60rem){
+  .datePicker{
+    font-size: small;
+  }
+}

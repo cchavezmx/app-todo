@@ -1,0 +1,186 @@
+
+.modal__evento__container{
+  display: flex;
+  justify-content: center;
+}
+
+.btn__cancelar__evento{
+    background-color: #7B5BF9;
+    width: 10.26rem;
+    height: 3.26rem;
+    border-radius: 4px;
+    margin-left: 4px;
+    outline: none;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+
+    &::before{
+      content: url("../assets/icon/envelope-times.svg");      
+      background-color: white;
+      border-radius: 100px;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    &:hover{
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &:active{
+      transform: scale(0.9);
+    }
+}
+
+.btn__validate__evento{
+    background-color: red;
+    width: 10.26rem;
+    height: 3.26rem;
+    border-radius: 4px;
+    margin-left: 4px;
+    outline: none;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    
+    &:hover{
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &:active{
+      transform: scale(0.9);
+    }
+}
+
+.btn__modificar__evento{
+    background-color: #7B5BF9;
+    width: 10.26rem;
+    height: 3.26rem;
+    border-radius: 4px;
+    margin-left: 4px;
+    outline: none;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+
+    &::before{
+      content: url("../assets/icon/edit-alt.svg");      
+      background-color: white;
+      border-radius: 100px;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    &:hover{
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &:active{
+      transform: scale(0.9);
+    }
+}
+
+.btn_home{
+  display: block;
+  margin: 4px;
+  content: url('../assets/icon/home.svg');
+  background-color: #9278FF ;
+  border-radius: 18px;
+  padding: 4px;
+  height: 68px;
+  width: 68px;
+
+  &:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+.btn_share{
+  display: block;
+  margin: 4px;
+  content: url('../assets/icon/comment-share.svg');
+  background-color: #9278FF ;
+  border-radius: 18px;
+  padding: 4px;
+  height: 68px;
+  width: 68px;
+
+  &:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+.btn_terminadas{
+  display: block;
+  margin: 4px;
+  content: url('../assets/icon/cloud-times.svg');
+  background-color: #9278FF ;
+  border-radius: 18px;
+  padding: 4px;
+  height: 68px;
+  width: 68px;
+
+  &:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+.btn_logout{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: 4px;
+  content: url('../assets/icon/sign-out-alt.svg');
+  padding: 4px;
+  height: 68px;
+  width: 68px;
+
+  &:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+.btn__selectd{
+  background-color: var(--blue);
+}
+
+
+@media (max-width:60rem) {
+  .btn_logout{
+    right: 0;
+    top: 0;
+  }
+}
