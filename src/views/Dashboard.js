@@ -40,7 +40,6 @@ const Dashboard = () => {
     })
   }
 
-  console.log(eventosCompartidos)
   useEffect(() => {
     eventosCompartidos === true && openNotification()
   }, [eventosCompartidos])

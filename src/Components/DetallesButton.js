@@ -23,9 +23,7 @@ const DetallesButton = ({ message, subject, id, chivato, responsables, creador }
       body: JSON.stringify(payload)
     })
       .then(res => res.json())
-      .then(res => {
-        console.log(res)
-      })
+      .then(res => res)
       .catch(err => console.log(err))
       .finally(() => handledModal())
       .finally(() => chivato(payload))
@@ -47,9 +45,7 @@ const DetallesButton = ({ message, subject, id, chivato, responsables, creador }
       }
     })
       .then(res => res.json())
-      .then(res => {
-        console.log(res)
-      })
+      .then(res => res)
       .catch(err => console.log(err))
       .finally(() => handledModal())
       .finally(() => chivato({ clean: id }))

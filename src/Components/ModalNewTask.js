@@ -23,8 +23,6 @@ const ModalNewTask = ({ open, handleCloseModal }) => {
   const [tareaDate, setTareaDate] = useState(`${year}-${month}-${day}`)
 
   const onSubmit = (data) => {
-    console.log(data)
-
     const payload = {
       subject: data.subject,
       description: data.description,

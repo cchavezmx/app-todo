@@ -12,9 +12,6 @@ const getAllEventsById = async (ctx, event) => {
     .then(res => res.json())
     .then(res => res.message)
     .catch(err => console.log(err))
-
-  console.log(addTask)
-
   return addTask
 }
 
