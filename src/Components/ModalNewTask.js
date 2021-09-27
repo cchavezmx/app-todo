@@ -61,7 +61,6 @@ const ModalNewTask = ({ open, handleCloseModal }) => {
       onCancel={handleCloseModal}
       footer={null}
     >
-      {JSON.stringify(current.value)}
       <form className="newTaskForm" onSubmit={handleSubmit(onSubmit)}>
         <input
           type="text"
@@ -84,6 +83,7 @@ const ModalNewTask = ({ open, handleCloseModal }) => {
             list="responsables"
             {...register('responsables')}
           >
+          <option value={null}>Compartir tarea</option>
             {
               Object.values(userList)
                 .map((user, index) => {

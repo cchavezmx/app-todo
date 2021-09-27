@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useHistory } from 'react-router-dom'
 import { UserDispatch } from 'Context/userContext'
 
 const Navbar = (props) => {
@@ -7,8 +7,10 @@ const Navbar = (props) => {
 
   const dispatch = UserDispatch()
 
+  const history = useHistory()
   const logout = () => {
     dispatch('LOGOUT')
+    history.push('/login')
   }
 
   return (

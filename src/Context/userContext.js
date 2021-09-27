@@ -133,8 +133,9 @@ const UserContextMachine = createMachine({
     success: {},
     logout: {
       invoke: {
-        src: async () => {
-          return localStorage.removeItem('tokenUserSite')
+        src: async (ctx) => {
+          localStorage.removeItem('tokenUserSite')
+          ctx.user = undefined
         },
         onDone: {
           target: 'initial'
